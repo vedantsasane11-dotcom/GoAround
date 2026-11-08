@@ -26,16 +26,16 @@ interface TripPlannerFormProps {
 const INTEREST_OPTIONS = [
   { id: 'nature', label: 'Scenic Nature & Sahyadri Hills', desc: 'Waterfalls, forest trails, green overlooks' },
   { id: 'heritage', label: 'Historic Forts & Maratha Heritage', desc: 'Bastions, gateways, old city architecture' },
-  { id: 'food_cafe', label: 'Café Hopping & Street Food', desc: 'Irani tea, bun maska, specialty roasteries' },
+  { id: 'food_cafe', label: 'Café Hopping & Street Food', desc: 'Irani chai, bun maska, local bakery eats' },
   { id: 'sunset_lakes', label: 'Peaceful Lakes & Sunset Points', desc: 'Pawna, Panshet, quiet reservoir shorelines' },
   { id: 'adventure', label: 'Adventure & Light Trekking', desc: 'Ridge trails, rocky climbs, viewpoint hikes' },
 ];
 
 const AVOID_OPTIONS = [
-  { id: 'heavy_traffic', label: 'Heavy Traffic Bottlenecks', desc: 'Avoid bypass choke points like Chandani Chowk at peak' },
-  { id: 'strenuous_trekking', label: 'Strenuous Trekking Climbs', desc: 'Keep walks casual and vehicle-accessible' },
-  { id: 'overpriced_dining', label: 'Overpriced Tourist Dining', desc: 'Stick to honest local dhabas and pocket-friendly spots' },
-  { id: 'crowded_tourist_spots', label: 'Crowded Weekend Traps', desc: 'Favor quiet offbeat overlooks over packed tourist hubs' },
+  { id: 'heavy_traffic', label: 'Heavy traffic choke points', desc: 'Avoid known peak traffic bottlenecks like Chandani Chowk' },
+  { id: 'strenuous_trekking', label: 'Tough, exhausting climbs', desc: 'Keep walks casual and vehicle-accessible' },
+  { id: 'overpriced_dining', label: 'Pricey tourist dining', desc: 'Stick to honest local dhabas and pocket-friendly spots' },
+  { id: 'crowded_tourist_spots', label: 'Crowded rush spots', desc: 'Favor quiet offbeat overlooks over packed tourist hubs' },
 ];
 
 export const TripPlannerForm: React.FC<TripPlannerFormProps> = ({
@@ -99,13 +99,13 @@ export const TripPlannerForm: React.FC<TripPlannerFormProps> = ({
       {/* Title & Introduction */}
       <div className="mb-10 text-center sm:text-left">
         <div className="text-xs font-semibold tracking-wider text-sky-700 uppercase mb-1.5">
-          Step 1 · Tailor Your Outing
+          Plan Your Outing
         </div>
         <h1 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-neutral-900">
-          Where does your Saturday start?
+          Where do you want to go?
         </h1>
         <p className="mt-2 text-sm sm:text-base text-neutral-600">
-          Enter realistic constraints. Tripweave constructs an optimized circuit without backtracking or surprise expenses.
+          Tell us where you&apos;re starting from and what kind of day you have in mind. We&apos;ll build a smooth route with realistic travel times and honest costs.
         </p>
       </div>
 
@@ -114,14 +114,14 @@ export const TripPlannerForm: React.FC<TripPlannerFormProps> = ({
         <div className="bg-white rounded-2xl border border-neutral-200/90 p-6 sm:p-8 shadow-xs space-y-7">
           <h2 className="text-base font-bold text-neutral-900 flex items-center gap-2">
             <MapPin className="w-4 h-4 text-sky-600" />
-            <span>Starting Hub & Timing</span>
+            <span>Starting Point & Time</span>
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* Starting Location */}
             <div>
               <label className="block text-xs font-semibold text-neutral-700 uppercase tracking-wide mb-2">
-                Starting Location in Pune
+                Where are you starting from?
               </label>
               <select
                 value={startingLocation}
@@ -135,21 +135,21 @@ export const TripPlannerForm: React.FC<TripPlannerFormProps> = ({
                 ))}
               </select>
               <p className="mt-1.5 text-xs text-neutral-500">
-                All transit minutes and fuel estimates calculate from this hub.
+                Travel times and fuel estimates will be calculated from this point.
               </p>
             </div>
 
             {/* Time Available */}
             <div>
               <label className="block text-xs font-semibold text-neutral-700 uppercase tracking-wide mb-2">
-                Available Time Window
+                How much time do you have?
               </label>
               <div className="grid grid-cols-2 gap-2">
                 {[
-                  { value: 4, label: '4 Hours', sub: 'Quick Outing' },
-                  { value: 8, label: '8 Hours', sub: 'Full Day' },
-                  { value: 12, label: '12 Hours', sub: 'Dawn to Dusk' },
-                  { value: 24, label: '24 Hours', sub: 'Weekend Retreat' },
+                  { value: 4, label: '4 Hours', sub: 'Half-day outing' },
+                  { value: 8, label: '8 Hours', sub: 'Full day out' },
+                  { value: 12, label: '12 Hours', sub: 'Morning till night' },
+                  { value: 24, label: '24 Hours', sub: 'Weekend getaway' },
                 ].map((item) => (
                   <button
                     key={item.value}
@@ -172,32 +172,32 @@ export const TripPlannerForm: React.FC<TripPlannerFormProps> = ({
           {/* Transport Mode */}
           <div className="pt-4 border-t border-neutral-100">
             <label className="block text-xs font-semibold text-neutral-700 uppercase tracking-wide mb-3">
-              Mode of Transportation
+              How will you travel?
             </label>
             <div className="grid grid-cols-1 sm:grid-cols-4 gap-3">
               {[
                 {
                   id: 'two_wheeler',
                   label: 'Two-Wheeler',
-                  sub: 'Bike / Scooter',
+                  sub: 'Bike or scooter',
                   icon: Bike,
                 },
                 {
                   id: 'metro_bus',
                   label: 'Public Transit',
-                  sub: 'Metro + Bus Pass',
+                  sub: 'Metro + local bus',
                   icon: Train,
                 },
                 {
                   id: 'cab_auto',
                   label: 'Cab / Auto',
-                  sub: 'Uber / Rickshaw',
+                  sub: 'Auto or cab',
                   icon: Car,
                 },
                 {
                   id: 'own_car',
                   label: 'Own Car',
-                  sub: 'Self-drive / Carpool',
+                  sub: 'Self-drive / carpool',
                   icon: Car,
                 },
               ].map((m) => {
@@ -230,7 +230,7 @@ export const TripPlannerForm: React.FC<TripPlannerFormProps> = ({
         <div className="bg-white rounded-2xl border border-neutral-200/90 p-6 sm:p-8 shadow-xs space-y-6">
           <h2 className="text-base font-bold text-neutral-900 flex items-center gap-2">
             <IndianRupee className="w-4 h-4 text-sky-600" />
-            <span>Budget & Companions</span>
+            <span>What your day could cost</span>
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
@@ -238,7 +238,7 @@ export const TripPlannerForm: React.FC<TripPlannerFormProps> = ({
             <div>
               <div className="flex items-center justify-between mb-2">
                 <label className="text-xs font-semibold text-neutral-700 uppercase tracking-wide">
-                  Budget Per Person
+                  Budget per person
                 </label>
                 <span className="text-lg font-bold text-sky-800 tabular-nums">
                   ₹{budgetPerPerson}
@@ -256,8 +256,8 @@ export const TripPlannerForm: React.FC<TripPlannerFormProps> = ({
               />
 
               <div className="flex justify-between text-[11px] text-neutral-500 mt-2 font-mono tabular-nums">
-                <span>₹300 (Chai/Snacks)</span>
-                <span>₹1,000 (Day Outing)</span>
+                <span>₹300 (Chai & snacks)</span>
+                <span>₹1,000 (Full day out)</span>
                 <span>₹3,000 (Weekend)</span>
               </div>
 
@@ -289,8 +289,8 @@ export const TripPlannerForm: React.FC<TripPlannerFormProps> = ({
                 {[
                   { size: 1, label: 'Solo' },
                   { size: 2, label: 'Duo' },
-                  { size: 4, label: 'Squad (3-5)' },
-                  { size: 6, label: 'Gang (6+)' },
+                  { size: 4, label: 'Friends (3–4)' },
+                  { size: 6, label: 'Group (5+)' },
                 ].map((item) => (
                   <button
                     key={item.size}
@@ -308,7 +308,7 @@ export const TripPlannerForm: React.FC<TripPlannerFormProps> = ({
                 ))}
               </div>
               <p className="mt-2 text-xs text-neutral-500">
-                Total group pool estimate: <strong className="text-neutral-800">₹{budgetPerPerson * groupSize}</strong>
+                Estimated total group budget: <strong className="text-neutral-800">₹{budgetPerPerson * groupSize}</strong>
               </p>
             </div>
           </div>
@@ -357,7 +357,7 @@ export const TripPlannerForm: React.FC<TripPlannerFormProps> = ({
         <div className="bg-white rounded-2xl border border-neutral-200/90 p-6 sm:p-8 shadow-xs space-y-4">
           <h2 className="text-base font-bold text-neutral-900 flex items-center gap-2">
             <ShieldAlert className="w-4 h-4 text-amber-500" />
-            <span>Things to Avoid (Dealbreakers)</span>
+            <span>Anything you&apos;d prefer to skip?</span>
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
@@ -399,18 +399,18 @@ export const TripPlannerForm: React.FC<TripPlannerFormProps> = ({
             {isGenerating ? (
               <>
                 <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                <span>Weaving Realistic Itinerary...</span>
+                <span>Putting your plan together...</span>
               </>
             ) : (
               <>
                 <Compass className="w-5 h-5 text-amber-300" />
-                <span>Generate My Realistic Itinerary</span>
+                <span>Create My Itinerary</span>
                 <ChevronRight className="w-5 h-5" />
               </>
             )}
           </button>
           <p className="text-center text-xs text-neutral-500 mt-3">
-            Real transit matrix applied · Calibrated for Pune weekend road conditions
+            Calculated with real Pune travel times · No impossible schedules or hidden stops
           </p>
         </div>
       </form>

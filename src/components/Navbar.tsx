@@ -30,7 +30,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
             <div>
               <span className="font-display text-xl font-bold tracking-tight text-neutral-900 group-hover:text-sky-700 transition-colors">
-                Tripweave
+                GoAround
               </span>
             </div>
           </button>

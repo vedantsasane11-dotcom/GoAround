@@ -1,0 +1,4326 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-10-15T18:34:46Z",
+  "goaround_metadata": {
+    "processing": "Filtered from the user's GoAround working GeoJSON to retain named, visitor-relevant landmarks and selected major religious sites, forts, museums, viewpoints, theme parks, and major parks.",
+    "source": "OpenStreetMap",
+    "attribution": "© OpenStreetMap contributors",
+    "note": "This is a curated candidate list based on available OSM tags and name heuristics, not an official popularity ranking or a guarantee that every included place is currently open. Verify names, coordinates, access, and licensing/attribution before publishing.",
+    "original_feature_count": 7606,
+    "filtered_feature_count": 175,
+    "excluded_feature_count": 7431,
+    "selection_counts": {
+      "heritage_landmark": 52,
+      "tourism_landmark": 72,
+      "major_religious_site": 46,
+      "major_park_or_garden": 6
+    },
+    "deduplication": "Removed duplicate entries with the same normalized name and near-identical coordinates."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2861672",
+        "addr:city": "Pune",
+        "addr:housename": "Shaniwarwada",
+        "building": "yes",
+        "building:material": "stone",
+        "castle_type": "fortress",
+        "height": "12",
+        "historic": "castle",
+        "name": "Shaniwar Wada",
+        "name:en": "Shaniwar Wada",
+        "name:mr": "शनिवार वाडा",
+        "type": "multipolygon",
+        "@geometry": "center",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "castle",
+        "source": "OpenStreetMap",
+        "source_object_id": "relation/2861672",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8553472,
+          18.5193863
+        ]
+      },
+      "id": "relation/2861672"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/5861125",
+        "building": "yes",
+        "historic": "castle",
+        "name": "Bhor Rajwada",
+        "type": "multipolygon",
+        "@geometry": "center",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "castle",
+        "source": "OpenStreetMap",
+        "source_object_id": "relation/5861125",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8424362,
+          18.1523308
+        ]
+      },
+      "id": "relation/5861125"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/41393392",
+        "area": "yes",
+        "name": "Bhaje Caves",
+        "name:en": "Bhaje Caves",
+        "name:mr": "भाजे लेणी",
+        "tourism": "attraction",
+        "wikidata": "Q854709",
+        "wikimedia_commons": "Category:Bhaja Caves",
+        "wikipedia": "en:Bhaja Caves",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/41393392",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4813257,
+          18.7289762
+        ]
+      },
+      "id": "way/41393392"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/53272975",
+        "addr:city": "pune",
+        "addr:housenumber": "swargate",
+        "addr:postcode": "411009",
+        "addr:street": "road",
+        "leisure": "park",
+        "name": "Sarasbaug",
+        "name:mr": "सारसबाग",
+        "opening_hours": "Mo-Sa 07:00-21:00",
+        "tourism": "attraction",
+        "wikidata": "Q7423180",
+        "wikimedia_commons": "Category:Sarasbaug",
+        "wikipedia": "en:Sarasbaug",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/53272975",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8528092,
+          18.5008294
+        ]
+      },
+      "id": "way/53272975"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/53350109",
+        "name": "Shinde Chhatri",
+        "name:mr": "शिंदे छत्री",
+        "tourism": "attraction",
+        "wikidata": "Q7497295",
+        "wikimedia_commons": "Category:Shinde Chhatri",
+        "wikipedia": "en:Shinde Chhatri",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/53350109",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8972726,
+          18.4916295
+        ]
+      },
+      "id": "way/53350109"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/67169452",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "denomination": "hare_krishna",
+        "name": "ISKCON Temple",
+        "religion": "hindu",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/67169452",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8794416,
+          18.5200393
+        ]
+      },
+      "id": "way/67169452"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/83510498",
+        "alt_name": "Vitandgad Fort",
+        "area": "yes",
+        "historic": "fort",
+        "name": "Tikona Fort",
+        "wikidata": "Q3633183",
+        "wikimedia_commons": "Category:Tikona",
+        "wikipedia": "en:Tikona",
+        "@geometry": "center",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/83510498",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5126161,
+          18.6318638
+        ]
+      },
+      "id": "way/83510498"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/91710349",
+        "historic": "fort",
+        "name": "Tail Baila",
+        "@geometry": "center",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/91710349",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.3350035,
+          18.5633542
+        ]
+      },
+      "id": "way/91710349"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/97391941",
+        "building": "yes",
+        "historic": "fort",
+        "name": "Korighad Fort",
+        "source": "OpenStreetMap",
+        "@geometry": "center",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source_object_id": "way/97391941",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.3860858,
+          18.6204527
+        ]
+      },
+      "id": "way/97391941"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/105876380",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "denomination": "shaivism",
+        "name": "Shri Kaal Bhairavnath Temple",
+        "name:mr": "श्री काळ भैरवनाथ देऊळ",
+        "religion": "hindu",
+        "source": "OpenStreetMap",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source_object_id": "way/105876380",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.3972004,
+          18.8292915
+        ]
+      },
+      "id": "way/105876380"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/126392859",
+        "access": "yes",
+        "alt_name": "Sinhagarh Fort",
+        "castle_type": "fortress",
+        "historic": "castle",
+        "name": "Sinhagad Fort",
+        "name:hi": "सिंहगड किला",
+        "name:mr": "सिंहगड किल्ला",
+        "@geometry": "center",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "castle",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/126392859",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7567027,
+          18.3646594
+        ]
+      },
+      "id": "way/126392859"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/149955071",
+        "name": "Choki Dani",
+        "tourism": "theme_park",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "theme_park",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/149955071",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.9661128,
+          18.5545986
+        ]
+      },
+      "id": "way/149955071"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/158879223",
+        "name": "Peacock bay",
+        "tourism": "attraction",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/158879223",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7505251,
+          18.437373
+        ]
+      },
+      "id": "way/158879223"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/164454174",
+        "name": "Mawal Shrushti",
+        "source": "OpenStreetMap",
+        "tourism": "attraction",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source_object_id": "way/164454174",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5422247,
+          18.5627634
+        ]
+      },
+      "id": "way/164454174"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/174216367",
+        "alt_name": "Vichitragad",
+        "historic": "fort",
+        "name": "Rohida Fort",
+        "wikidata": "Q19895881",
+        "wikimedia_commons": "Category:Rohida Fort",
+        "wikipedia": "en:Rohida fort",
+        "@geometry": "center",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/174216367",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8208151,
+          18.1028293
+        ]
+      },
+      "id": "way/174216367"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/176331809",
+        "name": "Wildernest Country Homes",
+        "tourism": "attraction",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/176331809",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7747754,
+          18.4169197
+        ]
+      },
+      "id": "way/176331809"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/194706373",
+        "name": "Della Adventure",
+        "name:mr": "डेला एडवेंचर",
+        "tourism": "theme_park",
+        "website": "https://www.dellaadventure.com/",
+        "wikidata": "Q111913412",
+        "wikipedia": "en:Della Adventure Park",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "theme_park",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/194706373",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.3898994,
+          18.7803112
+        ]
+      },
+      "id": "way/194706373"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/197954182",
+        "name": "Parvati",
+        "tourism": "attraction",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/197954182",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8467924,
+          18.49727
+        ]
+      },
+      "id": "way/197954182"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/198116052",
+        "historic": "castle",
+        "name": "Shivneri Fort",
+        "wikidata": "Q3520074",
+        "wikimedia_commons": "Category:Shivneri Fort",
+        "wikipedia": "en:Shivneri fort",
+        "@geometry": "center",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "castle",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/198116052",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8564814,
+          19.1983553
+        ]
+      },
+      "id": "way/198116052"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/215535660",
+        "amenity": "place_of_worship",
+        "name": "Omkareshwar Mandir",
+        "religion": "hindu",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/215535660",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8490989,
+          18.5199401
+        ]
+      },
+      "id": "way/215535660"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/215998826",
+        "area": "yes",
+        "fee": "yes",
+        "name": "Aga Khan Palace",
+        "name:en": "Aga Khan Palace",
+        "name:mr": "आगा खान पॅलेस",
+        "tourism": "attraction",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/215998826",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.901537,
+          18.5524853
+        ]
+      },
+      "id": "way/215998826"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/215998839",
+        "building": "yes",
+        "castle_type": "palace",
+        "historic": "castle",
+        "name": "Aga Khan Palace",
+        "name:en": "Aga Khan Palace",
+        "wikidata": "Q2344976",
+        "wikimedia_commons": "Category:Aga Khan Palace",
+        "wikipedia": "en:Aga Khan Palace",
+        "@geometry": "center",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "castle",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/215998839",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.9014477,
+          18.5523605
+        ]
+      },
+      "id": "way/215998839"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/217271037",
+        "name": "Lal Mahal",
+        "name:en": "Lal Mahal",
+        "name:mr": "लाल महाल",
+        "tourism": "attraction",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/217271037",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8566644,
+          18.5187252
+        ]
+      },
+      "id": "way/217271037"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/217631172",
+        "addr:city": "Pune",
+        "addr:district": "Pune",
+        "addr:postcode": "412307",
+        "addr:street": "Solapur Road",
+        "contact:email": "manaliresortpune@gmail.com",
+        "name": "Manali Resort and Banquet",
+        "phone": "+91 926 010 0500;+91 937 107 3020;+91 988 198 0007",
+        "tourism": "theme_park",
+        "website": "https://www.manaliresortpune.com",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "theme_park",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/217631172",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.998642,
+          18.4930933
+        ]
+      },
+      "id": "way/217631172"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/218078554",
+        "name": "Mahatma Phule Vastu Sangrahalaya",
+        "name:etymology:wikidata": "Q314394",
+        "name:mr": "महात्मा फुले वस्तू संग्रहालय",
+        "tourism": "museum",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "museum",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/218078554",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8451834,
+          18.5236343
+        ]
+      },
+      "id": "way/218078554"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/218078556",
+        "historic": "archaeological_site",
+        "name": "Pataleshwar",
+        "name:mr": "पाताळेश्वर",
+        "tourism": "attraction",
+        "wikidata": "Q7144204",
+        "wikimedia_commons": "Category:Pataleshwar",
+        "wikipedia": "en:Pataleshwar",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/218078556",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8500789,
+          18.527045
+        ]
+      },
+      "id": "way/218078556"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/225650946",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Bhairavnath Temple",
+        "religion": "hindu",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/225650946",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.0288919,
+          18.3414118
+        ]
+      },
+      "id": "way/225650946"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/232879052",
+        "building": "yes",
+        "name": "Bharat Itihas Sanshodhak Mandal",
+        "name:mr": "भारत इतिहास संशोधक मंडळ",
+        "tourism": "museum",
+        "wikidata": "Q3635786",
+        "wikipedia": "en:Bharat Itihas Sanshodhak Mandal",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "museum",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/232879052",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8495104,
+          18.5106663
+        ]
+      },
+      "id": "way/232879052"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/233840268",
+        "amenity": "place_of_worship",
+        "name": "Khandoba Mandir",
+        "name:mr": "खंडोबा मंदिर",
+        "religion": "hindu",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/233840268",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7854535,
+          18.6507257
+        ]
+      },
+      "id": "way/233840268"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/236675857",
+        "name": "Appughar",
+        "name:mr": "अप्पूघर",
+        "tourism": "theme_park",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "theme_park",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/236675857",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7632096,
+          18.6657822
+        ]
+      },
+      "id": "way/236675857"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/244656951",
+        "amenity": "place_of_worship",
+        "name": "Shri Khandoba Martanda Bhairav Mandir",
+        "name:en": "Shri Khandoba Martanda Bhairav Mandir",
+        "name:mr": "श्री खंडोबा मार्तंड भौरव मंदीर",
+        "religion": "hindu",
+        "website": "http://jejuri.in/",
+        "wikidata": "Q110823714",
+        "wikimedia_commons": "Category:Khandoba Temple, Jejuri",
+        "wikipedia": "en:Khandoba Temple, Jejuri",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/244656951",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.1605869,
+          18.2723742
+        ]
+      },
+      "id": "way/244656951"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/246996059",
+        "addr:city": "Pimpri-Chinchwad",
+        "addr:postcode": "411061",
+        "addr:street": "Pimple Gurav Road",
+        "leisure": "park",
+        "name": "Pimple Gurav Dinosaur Park",
+        "name:mr": "डायनासोर उद्यान",
+        "opening_hours": "Mo-Su 05:00-20:30",
+        "operator": "Pimpri-Chinchwad Municipal Corporation",
+        "tourism": "theme_park",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "theme_park",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/246996059",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8175747,
+          18.5921918
+        ]
+      },
+      "id": "way/246996059"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/264276391",
+        "amenity": "place_of_worship",
+        "building": "temple",
+        "check_date": "2026-03-12",
+        "name": "Shreemant Dagdusheth Halwai Ganpati Mandir",
+        "name:mr": "श्रीमंत दगडूशेठ हलवाई गणपती मंदिर",
+        "religion": "hindu",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/264276391",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8560844,
+          18.5163909
+        ]
+      },
+      "id": "way/264276391"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/264278038",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "ISKCON NVCC Temple",
+        "religion": "hindu",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/264278038",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8807134,
+          18.4479061
+        ]
+      },
+      "id": "way/264278038"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/264281528",
+        "building": "commercial",
+        "name": "Raja Dinkar Kelkar Museum",
+        "name:mr": "राजा दिनकर केळकर संग्रहालय",
+        "tourism": "museum",
+        "wikidata": "Q1134736",
+        "wikimedia_commons": "Category:Raja Dinkar Kelkar Museum",
+        "wikipedia": "en:Raja Dinkar Kelkar Museum",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "museum",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/264281528",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8545094,
+          18.5107618
+        ]
+      },
+      "id": "way/264281528"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/264282504",
+        "amenity": "place_of_worship",
+        "name": "Parvati Temple",
+        "religion": "hindu",
+        "source": "OpenStreetMap",
+        "wall": "yes",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source_object_id": "way/264282504",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8470689,
+          18.4975989
+        ]
+      },
+      "id": "way/264282504"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/264286363",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Baneshwar Temple",
+        "name:en": "Baneshwar Temple",
+        "name:mr": "बाणेश्वर मंदिर",
+        "religion": "hindu",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/264286363",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7871441,
+          18.5588909
+        ]
+      },
+      "id": "way/264286363"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/281798382",
+        "historic": "fort",
+        "name": "Purandar Fort",
+        "@geometry": "center",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/281798382",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.9744471,
+          18.2773848
+        ]
+      },
+      "id": "way/281798382"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/281798464",
+        "historic": "fort",
+        "name": "Vajragad Fort",
+        "@geometry": "center",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/281798464",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.9898853,
+          18.2844722
+        ]
+      },
+      "id": "way/281798464"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/283144394",
+        "name": "Lion Point",
+        "tourism": "viewpoint",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/283144394",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.3876167,
+          18.7041145
+        ]
+      },
+      "id": "node/283144394"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/289333384",
+        "name": "Nighoj Kund",
+        "tourism": "attraction",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/289333384",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.2627242,
+          18.9321219
+        ]
+      },
+      "id": "way/289333384"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/290390068",
+        "building": "yes",
+        "name": "Sawai Gandharva Smarak",
+        "name:mr": "सवाई गंधर्व स्मारक",
+        "tourism": "museum",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "museum",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/290390068",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8454956,
+          18.5317281
+        ]
+      },
+      "id": "way/290390068"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/293714112",
+        "amenity": "place_of_worship",
+        "name": "Baneshwar",
+        "name:mr": "बनेश्वर",
+        "religion": "hindu",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/293714112",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8740519,
+          18.255708
+        ]
+      },
+      "id": "way/293714112"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/331478719",
+        "addr:city": "Pune",
+        "addr:district": "Pune",
+        "addr:postcode": "411016",
+        "addr:street": "Senapati Bapat Marg",
+        "building": "museum",
+        "contact:facebook": "https://www.facebook.com/SymbiosisSocietysDrBabasahebAmbedkarMuseumMemorial/",
+        "contact:instagram": "https://www.instagram.com/ambedkarmuseum/",
+        "contact:youtube": "https://www.youtube.com/@symbiosissocietysdr.babasa2926/",
+        "email": "ambedkarmuseum@symbiosis.ac.in",
+        "fax": "+91 20 2566 7109",
+        "museum": "history",
+        "name": "Dr. Babasaheb Ambedkar Museum",
+        "name:etymology:wikidata": "Q231690",
+        "name:mr": "डॉ. बाबासाहेब आंबेडकर संग्रहालय",
+        "phone": "+91 20 2592 5370;+91 20 2565 9909",
+        "tourism": "museum",
+        "website": "https://symbiosis-ambedkarmemorial.org/",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "museum",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/331478719",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8299959,
+          18.5242655
+        ]
+      },
+      "id": "way/331478719"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/359790919",
+        "addr:city": "Pune",
+        "addr:postcode": "411021",
+        "addr:street": "FLAME University Path",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Khandoba Mandir",
+        "religion": "hindu",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/359790919",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7682868,
+          18.5176566
+        ]
+      },
+      "id": "way/359790919"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/373720739",
+        "amenity": "place_of_worship",
+        "hindu:deity": "Bhimashankar",
+        "name": "Bhimashankar Temple",
+        "place_of_worship": "jyotirlinga",
+        "religion": "hindu",
+        "wikidata": "Q1093326",
+        "wikimedia_commons": "Category:Bhimashankar",
+        "wikipedia": "en:Bhimashankar Temple",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/373720739",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.536039,
+          19.072014
+        ]
+      },
+      "id": "way/373720739"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/440673545",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Bhuleshwar Temple",
+        "religion": "hindu",
+        "wikidata": "Q4902130",
+        "wikimedia_commons": "Category:Bhuleshwar Temple, Pune",
+        "wikipedia": "en:Bhuleshwar Temple",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/440673545",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.2410847,
+          18.4359228
+        ]
+      },
+      "id": "way/440673545"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/532470092",
+        "leisure": "park",
+        "name": "Bund Garden",
+        "name:mr": "बंडगार्डन",
+        "wikidata": "Q4997473",
+        "wikimedia_commons": "Category:Bund Garden, Pune",
+        "wikipedia": "en:Bund Garden, Pune",
+        "@geometry": "center",
+        "goaround_category": "recreation",
+        "goaround_subcategory": "park",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/532470092",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8842489,
+          18.5416233
+        ]
+      },
+      "id": "way/532470092"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/544169744",
+        "addr:city": "Pune",
+        "addr:postcode": "411019",
+        "addr:street": "Shambhaji Nagar",
+        "addr:unit": "Chinchwad",
+        "description": "Inside is the famous Snake Park Zoo",
+        "leisure": "park",
+        "name": "Nisargakavi Bahinabai Chaudhary Zoo",
+        "@geometry": "center",
+        "goaround_category": "recreation",
+        "goaround_subcategory": "park",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/544169744",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.799409,
+          18.6613134
+        ]
+      },
+      "id": "way/544169744"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/549548866",
+        "name": "Mutha River view point",
+        "tourism": "viewpoint",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/549548866",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6185399,
+          18.3842288
+        ]
+      },
+      "id": "way/549548866"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/561168113",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Tulja Bhavani Temple",
+        "religion": "hindu",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/561168113",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7709702,
+          18.646556
+        ]
+      },
+      "id": "way/561168113"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/640473406",
+        "name": "Kundalika Valley view point",
+        "tourism": "viewpoint",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/640473406",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4127983,
+          18.5086021
+        ]
+      },
+      "id": "way/640473406"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/696610586",
+        "addr:postcode": "411021",
+        "addr:street": "Sus Road",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Bhairavnath Temple",
+        "religion": "hindu",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/696610586",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7542284,
+          18.5536321
+        ]
+      },
+      "id": "way/696610586"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/798336778",
+        "leisure": "park",
+        "name": "Taljai Ground",
+        "@geometry": "center",
+        "goaround_category": "recreation",
+        "goaround_subcategory": "park",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/798336778",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8480607,
+          18.4824438
+        ]
+      },
+      "id": "way/798336778"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/810328975",
+        "name": "Rajmachi Fort",
+        "name:mr": "राजमाची किल्ला",
+        "place": "locality",
+        "tourism": "attraction",
+        "wikidata": "Q3635161",
+        "wikimedia_commons": "Category:Rajmachi",
+        "wikipedia": "en:Rajmachi",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/810328975",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.3974108,
+          18.8296834
+        ]
+      },
+      "id": "node/810328975"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/823068911",
+        "access": "yes",
+        "building": "yes",
+        "historic": "fort",
+        "layer": "-1",
+        "name": "Malhargad",
+        "@geometry": "center",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/823068911",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.0495552,
+          18.4119661
+        ]
+      },
+      "id": "way/823068911"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/843780210",
+        "alt_name": "Rajmachi",
+        "historic": "fort",
+        "name": "Shriwardhan Ballekilla",
+        "name:en": "Shrivardhan Fort",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/843780210",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.3999,
+          18.8267625
+        ]
+      },
+      "id": "node/843780210"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/843780223",
+        "historic": "fort",
+        "name": "Manaranjan Fort",
+        "name:mr": "मनरंजन गड",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/843780223",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.3954689,
+          18.8298242
+        ]
+      },
+      "id": "node/843780223"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/937734468",
+        "historic": "fort",
+        "name": "जेजुरगड",
+        "name:en": "Jejur fort",
+        "name:mr": "जेजुरगड",
+        "website": "http://jejuri.in/jejurgad",
+        "@geometry": "center",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/937734468",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.1603869,
+          18.2729904
+        ]
+      },
+      "id": "way/937734468"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/958591197",
+        "name": "Bhushi Dam",
+        "name:en": "Bhushi Dam",
+        "name:mr": "भुशी धरण",
+        "tourism": "attraction",
+        "waterway": "dam",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/958591197",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.396111,
+          18.7225482
+        ]
+      },
+      "id": "way/958591197"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/981035041",
+        "name": "Diamond Parks - Water, Adventure & Camping",
+        "tourism": "theme_park",
+        "website": "https://www.tripadvisor.com/Attraction_Review-g297654-d3211987-Reviews-Diamond_Parks_Water_Adventure_Camping-Pune_Pune_District_Maharashtra.html",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "theme_park",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/981035041",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.9582929,
+          18.6062802
+        ]
+      },
+      "id": "way/981035041"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1030015753",
+        "addr:city": "Pune",
+        "addr:postcode": "411004",
+        "addr:street": "Dr. Ketkar Path",
+        "dog": "leashed",
+        "leisure": "park",
+        "name": "Kamala Nehru Park",
+        "name:etymology:wikidata": "Q3633365",
+        "opening_hours": "Mo-Su 07:00-10:00, 16:00-20:30",
+        "smoking": "no",
+        "@geometry": "center",
+        "goaround_category": "recreation",
+        "goaround_subcategory": "park",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/1030015753",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8348138,
+          18.5169871
+        ]
+      },
+      "id": "way/1030015753"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1065807980",
+        "historic": "archaeological_site",
+        "name": "Karla Caves",
+        "wikidata": "Q6372431",
+        "wikipedia": "en:Karla Caves",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "archaeological_site",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/1065807980",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4703235,
+          18.7837433
+        ]
+      },
+      "id": "node/1065807980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1067629667",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Khandoba Mandir",
+        "religion": "hindu",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/1067629667",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7650498,
+          18.5692746
+        ]
+      },
+      "id": "way/1067629667"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1067959284",
+        "amenity": "place_of_worship",
+        "name": "Sri Balaji Temple",
+        "name:mr": "श्री बालाजी मंदिर",
+        "religion": "hindu",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/1067959284",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7897361,
+          18.5416824
+        ]
+      },
+      "id": "node/1067959284"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1092333648",
+        "building": "yes",
+        "historic": "fort",
+        "name": "Dhawalgad Fort",
+        "@geometry": "center",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/1092333648",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.1627389,
+          18.429054
+        ]
+      },
+      "id": "way/1092333648"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1127945662",
+        "ele": "762.93",
+        "name": "Dhanya kothar",
+        "natural": "cave_entrance",
+        "tourism": "attraction",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/1127945662",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.3994589,
+          18.8276899
+        ]
+      },
+      "id": "node/1127945662"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1158262461",
+        "alt_name": "Chakan Fort",
+        "historic": "fort",
+        "name": "Sangramdurga Fort",
+        "@geometry": "center",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/1158262461",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8625967,
+          18.7570301
+        ]
+      },
+      "id": "way/1158262461"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1158269265",
+        "historic": "fort",
+        "name": "Induri Fort",
+        "@geometry": "center",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/1158269265",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7141794,
+          18.7359971
+        ]
+      },
+      "id": "way/1158269265"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1174721433",
+        "name": "Aai Museum",
+        "tourism": "museum",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "museum",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/1174721433",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.003473,
+          18.3953972
+        ]
+      },
+      "id": "way/1174721433"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1184662768",
+        "check_date": "2025-12-20",
+        "name": "Valley of adventure",
+        "name:en": "Valley of adventure",
+        "name:mr": "वॅली ऑफ एडवेंचर",
+        "tourism": "theme_park",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "theme_park",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/1184662768",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5129452,
+          18.5824741
+        ]
+      },
+      "id": "way/1184662768"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1271767135",
+        "access": "permissive",
+        "leisure": "horse_riding",
+        "name": "Japalouppe",
+        "name:mr": "जपालूपे",
+        "tourism": "zoo",
+        "website": "https://japalouppe.com/",
+        "zoo": "petting_zoo",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "zoo",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/1271767135",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6953439,
+          18.7025956
+        ]
+      },
+      "id": "way/1271767135"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1350357777",
+        "access": "yes",
+        "building": "yes",
+        "castle_type": "fortress",
+        "historic": "castle",
+        "name": "Narayangad Fort",
+        "name:mr": "नारायणगड किल्ला",
+        "@geometry": "center",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "castle",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/1350357777",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.0336061,
+          19.1152526
+        ]
+      },
+      "id": "way/1350357777"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1356854731",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Khandoba Temple",
+        "name:mr": "खंडोबा मंदिर",
+        "religion": "hindu",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/1356854731",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6170801,
+          18.5209778
+        ]
+      },
+      "id": "way/1356854731"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1364324779",
+        "museum": "history",
+        "name": "Shivsrushti Historical Theme Park Pune",
+        "tourism": "museum",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "museum",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/1364324779",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8369378,
+          18.4567142
+        ]
+      },
+      "id": "way/1364324779"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1419914113",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Kalbhairavnath Temple",
+        "religion": "hindu",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/1419914113",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7319552,
+          18.4550121
+        ]
+      },
+      "id": "way/1419914113"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1432747074",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Shree Khandoba Mandir",
+        "religion": "hindu",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/1432747074",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8148068,
+          18.5400079
+        ]
+      },
+      "id": "way/1432747074"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1461491829",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Khandoba Bhorwadi",
+        "name:mr": "खंडोबा मंदीर भोरवाडी",
+        "religion": "hindu",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/1461491829",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.0561546,
+          19.1243472
+        ]
+      },
+      "id": "way/1461491829"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1462366794",
+        "access": "yes",
+        "building": "yes",
+        "historic": "fort",
+        "name": "Chawand Fort",
+        "@geometry": "center",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/1462366794",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7486516,
+          19.2375699
+        ]
+      },
+      "id": "way/1462366794"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1462367607",
+        "building": "yes",
+        "historic": "fort",
+        "layer": "1",
+        "name": "Nimgiri Fort",
+        "@geometry": "center",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/1462367607",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7727614,
+          19.2949524
+        ]
+      },
+      "id": "way/1462367607"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1487542659",
+        "building": "yes",
+        "name": "Dharmaveer Chhatrapati Sambhaji Maharaj Museum Vadhu Budruk",
+        "tourism": "museum",
+        "@geometry": "center",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "museum",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/1487542659",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.0381804,
+          18.6648424
+        ]
+      },
+      "id": "way/1487542659"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1559273042",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Shri Mayureshwar Mandir Morgaon",
+        "religion": "hindu",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/1559273042",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.3174988,
+          18.2781497
+        ]
+      },
+      "id": "way/1559273042"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1559273047",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Dharma Mandap Purva Dwar Morgaon",
+        "religion": "hindu",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/1559273047",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.3522168,
+          18.2753884
+        ]
+      },
+      "id": "way/1559273047"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1559273051",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Artha Mandap Dakhsin Dwar Morgaon",
+        "religion": "hindu",
+        "@geometry": "center",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "way/1559273051",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.2819408,
+          18.2241628
+        ]
+      },
+      "id": "way/1559273051"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1849234367",
+        "name": "Necklace Point",
+        "name:hi": "नेकलेस पॉईंट",
+        "name:mr": "नेकलेस पॉईंट",
+        "tourism": "viewpoint",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/1849234367",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8962631,
+          18.1852002
+        ]
+      },
+      "id": "node/1849234367"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2081486313",
+        "name": "Parvati Museum",
+        "tourism": "museum",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "museum",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/2081486313",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8468291,
+          18.4972669
+        ]
+      },
+      "id": "node/2081486313"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2081486315",
+        "name": "Parvati",
+        "tourism": "viewpoint",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/2081486315",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8471143,
+          18.4977735
+        ]
+      },
+      "id": "node/2081486315"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2081729952",
+        "historic": "archaeological_site",
+        "name": "प्रवेशद्वार",
+        "name:mr": "प्रवेशद्वार",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "archaeological_site",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/2081729952",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4812356,
+          18.7293667
+        ]
+      },
+      "id": "node/2081729952"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2165009895",
+        "castle_type": "fortress",
+        "historic": "castle",
+        "name": "Sinhagad Fort",
+        "tourism": "attraction",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/2165009895",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7552242,
+          18.3651456
+        ]
+      },
+      "id": "node/2165009895"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2289294092",
+        "amenity": "place_of_worship",
+        "check_date": "2026-03-12",
+        "name": "Kasba Ganpati",
+        "name:mr": "कसबा गणपती",
+        "religion": "hindu",
+        "wikidata": "Q6374068",
+        "wikimedia_commons": "Category:Kasba Ganpati temple",
+        "wikipedia": "en:Kasba Ganapati",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/2289294092",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8572406,
+          18.5190304
+        ]
+      },
+      "id": "node/2289294092"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2455119457",
+        "alt_name": "Joshi Railway museum",
+        "check_date": "2024-04-14",
+        "museum": "railway",
+        "name": "Joshi's Museum of Miniature Railways",
+        "name:en": "Joshi's Museum of Miniature Railways",
+        "name:mr": "जोशी रेल्वे संग्रहालय",
+        "opening_hours": "Mo-We,Fr 09:00-13:00,13:30-17:00; Th 09:00-13:00; Sa 09:00-16:00,17:00-20:00; Su 17:00-20:00",
+        "operator:type": "private",
+        "phone": "02025435378",
+        "tourism": "museum",
+        "website": "https://www.minirailways.com/",
+        "wheelchair": "no",
+        "wikidata": "Q15229762",
+        "wikipedia": "en:Joshi's Museum of Miniature Railway",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "museum",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/2455119457",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.822364,
+          18.5014117
+        ]
+      },
+      "id": "node/2455119457"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2701228387",
+        "addr:city": "Pune",
+        "addr:housenumber": "33 A",
+        "addr:postcode": "411002",
+        "addr:street": "Budhwar Peth",
+        "amenity": "place_of_worship",
+        "description": "Old Temple with great history of Pune . This temple is",
+        "name": "Tambdi Jogeshwari",
+        "name:mr": "तांबडी जोगेश्वरी",
+        "religion": "hindu",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/2701228387",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8547653,
+          18.5165314
+        ]
+      },
+      "id": "node/2701228387"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3386030400",
+        "historic": "aircraft",
+        "name": "HAL Marut",
+        "tourism": "attraction",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/3386030400",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8353667,
+          18.5172576
+        ]
+      },
+      "id": "node/3386030400"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3721058066",
+        "historic": "yes",
+        "name": "Kalyan Gate",
+        "name:hi": "कल्याण दरवाजा",
+        "name:mr": "कल्याण दरवाजा",
+        "tourism": "viewpoint",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/3721058066",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7538176,
+          18.3625613
+        ]
+      },
+      "id": "node/3721058066"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3721058067",
+        "historic": "yes",
+        "name": "Pune Gate",
+        "name:hi": "पुणे दरवाजा",
+        "name:mr": "पुणे दरवाजा",
+        "tourism": "viewpoint",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/3721058067",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7592159,
+          18.3655651
+        ]
+      },
+      "id": "node/3721058067"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3997118331",
+        "historic": "monument",
+        "name": "Buddha Statue",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "monument",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/3997118331",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7740402,
+          18.5442399
+        ]
+      },
+      "id": "node/3997118331"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4336624350",
+        "historic": "monument",
+        "name": "Ashoka Pillar",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "monument",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/4336624350",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7590824,
+          18.4610659
+        ]
+      },
+      "id": "node/4336624350"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4363674444",
+        "amenity": "place_of_worship",
+        "name": "Pataleshwar cave temple",
+        "religion": "hindu",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/4363674444",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8498456,
+          18.5269463
+        ]
+      },
+      "id": "node/4363674444"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4523148909",
+        "amenity": "place_of_worship",
+        "name": "Ramdara Temple",
+        "religion": "hindu",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/4523148909",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.0174368,
+          18.4437335
+        ]
+      },
+      "id": "node/4523148909"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5503345160",
+        "historic": "caves",
+        "name": "Bhuta Lena",
+        "tourism": "attraction",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/5503345160",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8738401,
+          19.1926745
+        ]
+      },
+      "id": "node/5503345160"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5503345162",
+        "historic": "caves",
+        "name": "Tulja Leni",
+        "tourism": "attraction",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/5503345162",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8361652,
+          19.2082016
+        ]
+      },
+      "id": "node/5503345162"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5795521366",
+        "addr:housenumber": "47",
+        "addr:place": "Natraj Society",
+        "name": "Yash Laxmi Numismatic Museum",
+        "opening_hours": "Tu-Su 17:00-20:00",
+        "phone": "094235 76607",
+        "tourism": "museum",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "museum",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/5795521366",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8236524,
+          18.4919917
+        ]
+      },
+      "id": "node/5795521366"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6137209923",
+        "amenity": "place_of_worship",
+        "name": "Shree Bhairavnath Temple",
+        "religion": "hindu",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/6137209923",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.102012,
+          18.6721379
+        ]
+      },
+      "id": "node/6137209923"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6541829419",
+        "addr:postcode": "411021",
+        "addr:street": "Sus Road",
+        "amenity": "place_of_worship",
+        "name": "Bhairavnath Temple",
+        "religion": "hindu",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/6541829419",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7543244,
+          18.5536118
+        ]
+      },
+      "id": "node/6541829419"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6895311225",
+        "amenity": "place_of_worship",
+        "name": "Shri Bhairavnath Temple",
+        "religion": "hindu",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/6895311225",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.9780484,
+          18.3430799
+        ]
+      },
+      "id": "node/6895311225"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6917411981",
+        "name": "Sinhagad Valley",
+        "tourism": "viewpoint",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/6917411981",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7688583,
+          18.3773169
+        ]
+      },
+      "id": "node/6917411981"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7169206205",
+        "name": "Bhopdeo Ghat Viewpoint",
+        "tourism": "viewpoint",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/7169206205",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.9055864,
+          18.4153987
+        ]
+      },
+      "id": "node/7169206205"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7195582110",
+        "historic": "fort",
+        "name": "Malhargad Fort",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/7195582110",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.049734,
+          18.411923
+        ]
+      },
+      "id": "node/7195582110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7199580919",
+        "ele": "1012",
+        "historic": "fort",
+        "name": "Tail-Baila",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/7199580919",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.335155,
+          18.5624649
+        ]
+      },
+      "id": "node/7199580919"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7251607939",
+        "name": "Tiger Point",
+        "tourism": "viewpoint",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/7251607939",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.3851987,
+          18.6958773
+        ]
+      },
+      "id": "node/7251607939"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7251607940",
+        "name": "Monkey Point",
+        "tourism": "viewpoint",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/7251607940",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.3885276,
+          18.7013067
+        ]
+      },
+      "id": "node/7251607940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7944584962",
+        "construction": "freestanding",
+        "leisure": "park",
+        "name": "Sambhaji Park",
+        "name:etymology:wikidata": "Q2737041",
+        "operator": "Pune Municipal Corporation",
+        "goaround_category": "recreation",
+        "goaround_subcategory": "park",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/7944584962",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8472146,
+          18.5206664
+        ]
+      },
+      "id": "node/7944584962"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8017991747",
+        "historic": "fort",
+        "name": "jivdhan fort",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/8017991747",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6871105,
+          19.277266
+        ]
+      },
+      "id": "node/8017991747"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8697450342",
+        "name": "लेण्याद्री च्या लेण्या",
+        "tourism": "attraction",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/8697450342",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8873709,
+          19.2433855
+        ]
+      },
+      "id": "node/8697450342"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8892098334",
+        "amenity": "place_of_worship",
+        "name": "Bhairavnath Temple",
+        "name:mr": "भैरवनाथ मंदिर",
+        "religion": "hindu",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/8892098334",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7918177,
+          18.5713503
+        ]
+      },
+      "id": "node/8892098334"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8999406553",
+        "historic": "fort",
+        "name": "Padargad Fort",
+        "wikidata": "Q19808720",
+        "wikipedia": "en:Padargad",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/8999406553",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.524102,
+          19.0527782
+        ]
+      },
+      "id": "node/8999406553"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9197024754",
+        "historic": "fort",
+        "name": "Mohangad Fort",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/9197024754",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6208252,
+          18.0776277
+        ]
+      },
+      "id": "node/9197024754"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9197024757",
+        "historic": "fort",
+        "name": "Raireshwar Fort",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/9197024757",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7207156,
+          18.0457759
+        ]
+      },
+      "id": "node/9197024757"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9197028052",
+        "historic": "fort",
+        "name": "Garudmaachi",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/9197028052",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4118258,
+          18.4505054
+        ]
+      },
+      "id": "node/9197028052"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9197028053",
+        "historic": "fort",
+        "name": "Kailasgad Fort",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/9197028053",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4790715,
+          18.5187131
+        ]
+      },
+      "id": "node/9197028053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9197072318",
+        "historic": "fort",
+        "name": "Visapur Fort",
+        "name:en": "Visapur Fort",
+        "name:mr": "दुर्ग विसापूर",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/9197072318",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4889849,
+          18.7208459
+        ]
+      },
+      "id": "node/9197072318"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9197072319",
+        "historic": "fort",
+        "name": "Lohagad Fort",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/9197072319",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4759959,
+          18.7098725
+        ]
+      },
+      "id": "node/9197072319"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9197114144",
+        "historic": "fort",
+        "name": "Durga fort",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/9197114144",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6493917,
+          19.2196956
+        ]
+      },
+      "id": "node/9197114144"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9197114147",
+        "historic": "fort",
+        "name": "Dhakoba Fort",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/9197114147",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6717797,
+          19.2391253
+        ]
+      },
+      "id": "node/9197114147"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9197143306",
+        "historic": "fort",
+        "name": "Sindola Fort",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/9197143306",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8038255,
+          19.3212339
+        ]
+      },
+      "id": "node/9197143306"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9197145215",
+        "historic": "fort",
+        "name": "Chawand Fort",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/9197145215",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7489907,
+          19.2371191
+        ]
+      },
+      "id": "node/9197145215"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9197147727",
+        "historic": "fort",
+        "name": "Bhorgiri Fort",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/9197147727",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5667903,
+          19.0472604
+        ]
+      },
+      "id": "node/9197147727"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9197147730",
+        "name": "Yetoba",
+        "tourism": "viewpoint",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/9197147730",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5439915,
+          19.1691072
+        ]
+      },
+      "id": "node/9197147730"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9197167317",
+        "historic": "fort",
+        "name": "Bhairavgad Fort",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/9197167317",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7144068,
+          19.3182339
+        ]
+      },
+      "id": "node/9197167317"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9197167320",
+        "historic": "fort",
+        "name": "Hanumantgad Fort",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/9197167320",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7713482,
+          19.294611
+        ]
+      },
+      "id": "node/9197167320"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9197167321",
+        "historic": "fort",
+        "name": "Nimgiri Fort",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/9197167321",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.773484,
+          19.2954207
+        ]
+      },
+      "id": "node/9197167321"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9197167322",
+        "historic": "fort",
+        "name": "Hadsar",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/9197167322",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8027795,
+          19.2708653
+        ]
+      },
+      "id": "node/9197167322"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9481240184",
+        "historic": "archaeological_site",
+        "name": "दुमजली कोरीव विहार",
+        "name:mr": "दुमजली कोरीव विहार",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "archaeological_site",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/9481240184",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4812517,
+          18.7292069
+        ]
+      },
+      "id": "node/9481240184"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9481240185",
+        "historic": "archaeological_site",
+        "name": "चैत्यगृह",
+        "name:mr": "चैत्यगृह",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "archaeological_site",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/9481240185",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4813145,
+          18.7293723
+        ]
+      },
+      "id": "node/9481240185"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9612882246",
+        "amenity": "place_of_worship",
+        "name": "Khandoba Mandir",
+        "religion": "hindu",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/9612882246",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.140683,
+          18.1481028
+        ]
+      },
+      "id": "node/9612882246"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9816755474",
+        "addr:city": "Supe",
+        "addr:postcode": "412204",
+        "amenity": "place_of_worship",
+        "denomination": "hindu",
+        "name": "Siddhivinayak Mandir",
+        "religion": "hindu",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/9816755474",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.3756022,
+          18.3334385
+        ]
+      },
+      "id": "node/9816755474"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10172979847",
+        "leisure": "park",
+        "name": "Taljai Cricket Ground",
+        "goaround_category": "recreation",
+        "goaround_subcategory": "park",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/10172979847",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.848057,
+          18.482271
+        ]
+      },
+      "id": "node/10172979847"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10248790568",
+        "amenity": "place_of_worship",
+        "name": "Shree Siddhivinayak Mandir",
+        "religion": "hindu",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/10248790568",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7802419,
+          18.5154752
+        ]
+      },
+      "id": "node/10248790568"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10270820331",
+        "name": "Dhak Bahiri Viewpoint",
+        "tourism": "viewpoint",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/10270820331",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4316646,
+          18.8555965
+        ]
+      },
+      "id": "node/10270820331"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10316607574",
+        "addr:city": "Pune",
+        "addr:housenumber": "289, Kothrud, Near Shivaji Statue, Lane, Kothrud Bus Stand Rd",
+        "addr:postcode": "411038",
+        "addr:street": "Shivaji Putala",
+        "building": "yes",
+        "check_date": "2026-03-15",
+        "name": "Sujit Aquariums",
+        "tourism": "aquarium",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "aquarium",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/10316607574",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.813757,
+          18.50149
+        ]
+      },
+      "id": "node/10316607574"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10548402346",
+        "addr:city": "Talegaon Dabhade",
+        "addr:postcode": "410506",
+        "amenity": "place_of_worship",
+        "check_date": "2026-03-09",
+        "name": "Tulja Bhavani Mata Mandir",
+        "religion": "hindu",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/10548402346",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6847083,
+          18.7214837
+        ]
+      },
+      "id": "node/10548402346"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10578845675",
+        "historic": "monument",
+        "inscription": "पुणे महानगरपालिका आपले सहर्ष  स्वागत करीत आहे",
+        "name": "Pune Border Pillar",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "monument",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/10578845675",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7607312,
+          18.5031294
+        ]
+      },
+      "id": "node/10578845675"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10740447972",
+        "historic": "fort",
+        "name": "Ghangad Fort",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "fort",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/10740447972",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.3592749,
+          18.545453
+        ]
+      },
+      "id": "node/10740447972"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11004963846",
+        "name": "संत दर्शन",
+        "name:en": "Sant Darshan",
+        "name:mr": "संत दर्शन",
+        "tourism": "attraction",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/11004963846",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5142798,
+          18.5830645
+        ]
+      },
+      "id": "node/11004963846"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11474798674",
+        "name": "Nira Deoghar Dam",
+        "tourism": "viewpoint",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/11474798674",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6983012,
+          18.0561485
+        ]
+      },
+      "id": "node/11474798674"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11700182023",
+        "addr:city": "Pimpri-Chinchwad",
+        "addr:district": "Pune",
+        "amenity": "place_of_worship",
+        "name": "Morya Gosavi Temple",
+        "religion": "hindu",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/11700182023",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7784417,
+          18.6263157
+        ]
+      },
+      "id": "node/11700182023"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11789597385",
+        "addr:city": "Narayangaon",
+        "addr:district": "Pune",
+        "addr:postcode": "410504",
+        "addr:street": "Junnar road",
+        "name": "Atharva aquarium",
+        "tourism": "aquarium",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "aquarium",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/11789597385",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.9711114,
+          19.1205416
+        ]
+      },
+      "id": "node/11789597385"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11843018849",
+        "addr:city": "Pune",
+        "addr:district": "Pune",
+        "addr:housenumber": "Khandoba Mandir Vadaj",
+        "addr:postcode": "410502",
+        "addr:street": "Vadaj road",
+        "amenity": "place_of_worship",
+        "name": "Khandoba Mandir",
+        "religion": "hindu",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/11843018849",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.872592,
+          19.1521479
+        ]
+      },
+      "id": "node/11843018849"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12039066569",
+        "addr:housenumber": "234",
+        "addr:postcode": "411009",
+        "addr:street": "Taljai Road",
+        "name": "Taljai Watch Tower",
+        "name:en": "Taljai Watch Tower",
+        "tourism": "attraction",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/12039066569",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8470923,
+          18.4842783
+        ]
+      },
+      "id": "node/12039066569"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12284891397",
+        "amenity": "place_of_worship",
+        "name": "Bhairavnath Temple",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/12284891397",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5758187,
+          19.1822689
+        ]
+      },
+      "id": "node/12284891397"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12317626571",
+        "name": "Sunset Point",
+        "tourism": "attraction",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/12317626571",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6744216,
+          18.748594
+        ]
+      },
+      "id": "node/12317626571"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12464844233",
+        "name": "Vaanarlingi",
+        "tourism": "viewpoint",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/12464844233",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6829285,
+          19.2746297
+        ]
+      },
+      "id": "node/12464844233"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12464856157",
+        "name": "Neemgiri Hanumantgad Viewpoint",
+        "tourism": "viewpoint",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/12464856157",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7852417,
+          19.2809105
+        ]
+      },
+      "id": "node/12464856157"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12464891429",
+        "name": "Dev Daubdya Viewpoint",
+        "tourism": "viewpoint",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/12464891429",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7463552,
+          19.3196703
+        ]
+      },
+      "id": "node/12464891429"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12464891875",
+        "name": "Doni Cha Daar Virwpoint",
+        "tourism": "viewpoint",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/12464891875",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6295327,
+          19.2043243
+        ]
+      },
+      "id": "node/12464891875"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12464903330",
+        "name": "Ghat Viewpoint",
+        "tourism": "viewpoint",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/12464903330",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6734527,
+          19.2394083
+        ]
+      },
+      "id": "node/12464903330"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12811393682",
+        "amenity": "place_of_worship",
+        "name": "Khandoba Mandir",
+        "religion": "hindu",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/12811393682",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8209889,
+          18.4149051
+        ]
+      },
+      "id": "node/12811393682"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12980328730",
+        "name": "mumbai point",
+        "tourism": "attraction",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/12980328730",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4255508,
+          18.3856577
+        ]
+      },
+      "id": "node/12980328730"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13299455317",
+        "name": "Chatrapati Shivaji Maharaj's Rajwada",
+        "name:mr": "छत्रपति शिवाजी महाराजांचा राजवाड़ा",
+        "tourism": "attraction",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/13299455317",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6823254,
+          18.2455657
+        ]
+      },
+      "id": "node/13299455317"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13299504368",
+        "name": "Zunzar Machi",
+        "tourism": "attraction",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/13299504368",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6269607,
+          18.2768734
+        ]
+      },
+      "id": "node/13299504368"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13380386560",
+        "addr:city": "Pune",
+        "addr:district": "Pune",
+        "addr:postcode": "411047",
+        "addr:street": "Khandoba Mal Temple Road",
+        "amenity": "place_of_worship",
+        "name": "Khandoba Mal Temple",
+        "religion": "hindu",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/13380386560",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.9209653,
+          18.6197271
+        ]
+      },
+      "id": "node/13380386560"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13410848389",
+        "access": "yes",
+        "archaeological_site": "petroglyph",
+        "historic": "archaeological_site",
+        "historic:civilization": "middle-ages",
+        "name": "Saptamatruka",
+        "name:mr": "सप्तमातृका",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "archaeological_site",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/13410848389",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7480394,
+          19.2390872
+        ]
+      },
+      "id": "node/13410848389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13629183825",
+        "amenity": "place_of_worship",
+        "check_date": "2026-03-09",
+        "name": "Iskcon Temple",
+        "religion": "hindu",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/13629183825",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8794789,
+          18.5200216
+        ]
+      },
+      "id": "node/13629183825"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13640129322",
+        "amenity": "place_of_worship",
+        "check_date": "2026-03-12",
+        "name": "Gurudwara,Dehu Road",
+        "religion": "sikh",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/13640129322",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7295336,
+          18.6834989
+        ]
+      },
+      "id": "node/13640129322"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13649044841",
+        "name": "Network Point (Jio)",
+        "tourism": "viewpoint",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/13649044841",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4226184,
+          18.83819
+        ]
+      },
+      "id": "node/13649044841"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13649050398",
+        "name": "Nagphani",
+        "tourism": "viewpoint",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/13649050398",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5311139,
+          19.0628581
+        ]
+      },
+      "id": "node/13649050398"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13649051826",
+        "name": "Mumbai Point",
+        "tourism": "viewpoint",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "viewpoint",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/13649051826",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4255192,
+          18.3855471
+        ]
+      },
+      "id": "node/13649051826"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13672024594",
+        "addr:city": "Pune",
+        "addr:district": "Pune",
+        "addr:postcode": "411030",
+        "addr:street": "Dattawadi Road",
+        "amenity": "place_of_worship",
+        "name": "Tulja Bhavani Temple",
+        "religion": "hindu",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/13672024594",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8390819,
+          18.5004727
+        ]
+      },
+      "id": "node/13672024594"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13691343801",
+        "historic": "monument",
+        "name": "Jay chand chowk",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "monument",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/13691343801",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4066353,
+          18.7495288
+        ]
+      },
+      "id": "node/13691343801"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13805714808",
+        "addr:city": "Pune",
+        "addr:street": "Lane Number 7",
+        "name": "RK Laxman museum",
+        "tourism": "museum",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "museum",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/13805714808",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7707934,
+          18.573321
+        ]
+      },
+      "id": "node/13805714808"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/14070189246",
+        "name": "Mahatma Gandhi Museum",
+        "tourism": "museum",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "museum",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/14070189246",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.9014878,
+          18.5525784
+        ]
+      },
+      "id": "node/14070189246"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/14093789642",
+        "amenity": "place_of_worship",
+        "check_date": "2026-08-14",
+        "internet_access": "no",
+        "name": "Khandoba Temple Jejuri",
+        "payment:cards": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no",
+        "religion": "hindu",
+        "goaround_category": "religious",
+        "goaround_subcategory": "place_of_worship",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/14093789642",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.1605588,
+          18.2723623
+        ]
+      },
+      "id": "node/14093789642"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/14251187502",
+        "access": "yes",
+        "historic": "monument",
+        "name": "Killedar Godaji Bhuruk Samadhi",
+        "goaround_category": "heritage",
+        "goaround_subcategory": "monument",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/14251187502",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6296389,
+          18.2928522
+        ]
+      },
+      "id": "node/14251187502"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/14251347888",
+        "name": "Nedhe",
+        "tourism": "attraction",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "attraction",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/14251347888",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.690884,
+          18.2412106
+        ]
+      },
+      "id": "node/14251347888"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/14268390502",
+        "name": "Mystery Rooms , Kp , Lane number 7",
+        "tourism": "theme_park",
+        "website": "http://mysteryrooms.in",
+        "goaround_category": "tourism",
+        "goaround_subcategory": "theme_park",
+        "source": "OpenStreetMap",
+        "source_object_id": "node/14268390502",
+        "name_status": "named",
+        "goaround_selection": "famous_place_candidate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8996542,
+          18.5343567
+        ]
+      },
+      "id": "node/14268390502"
+    }
+  ]
+}

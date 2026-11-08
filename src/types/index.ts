@@ -4,23 +4,28 @@ export type TripDuration = 4 | 8 | 12 | 24;
 
 export interface Destination {
   id: string;
+  sourceOsmId?: string;
   name: string;
-  area: string;
-  category: 'nature' | 'heritage' | 'food_cafe' | 'scenic_view' | 'adventure';
-  tagline: string;
-  description: string;
-  whySelectedText: string;
-  costPerPerson: number;
-  suggestedDurationMinutes: number;
-  imageUrl: string;
-  tags: string[];
-  crowdLevel: 'Low' | 'Moderate' | 'High';
-  bestTimeOfDay: 'Early Morning' | 'Mid Morning' | 'Afternoon' | 'Sunset' | 'Evening';
-  localTip: string;
+  area?: string | null;
+  category: 'nature' | 'heritage' | 'food_cafe' | 'scenic_view' | 'adventure' | string;
+  subcategory?: string | null;
+  tagline?: string | null;
+  description?: string | null;
+  whySelectedText?: string | null;
+  costPerPerson?: number | null; // null if unknown/unverified
+  suggestedDurationMinutes?: number | null; // null if unverified
+  imageUrl?: string | null; // null if unverified
+  tags?: string[];
+  crowdLevel?: 'Low' | 'Moderate' | 'High' | string | null;
+  bestTimeOfDay?: 'Early Morning' | 'Mid Morning' | 'Afternoon' | 'Sunset' | 'Evening' | string | null;
+  localTip?: string | null;
   coordinates: {
     lat: number;
     lng: number;
   };
+  metadata?: Record<string, unknown> | null;
+  verificationStatus?: 'candidate' | 'verified' | 'published' | 'archived';
+  isPublished?: boolean;
 }
 
 export interface PlanInput {
@@ -42,15 +47,18 @@ export interface ItineraryStop {
   travelTimeToNextMinutes?: number;
   distanceToNextKm?: number;
   transitNotesToNext?: string;
-  estimatedCost: number;
-  reasonForPick: string;
-  insiderTip: string;
+  estimatedCost: number | null; // null if unverified
+  costUnverified?: boolean;
+  reasonForPick?: string;
+  insiderTip?: string;
 }
 
 export interface BudgetCategory {
   name: string;
   amount: number;
   percent: number;
+  isEstimate?: boolean;
+  isUnverified?: boolean;
 }
 
 export interface Itinerary {
@@ -64,11 +72,13 @@ export interface Itinerary {
   totalDistanceKm: number;
   groupSize: number;
   transportMode: TransportMode;
-  coverImage: string;
+  coverImage?: string;
   stops: ItineraryStop[];
   budgetBreakdown: BudgetCategory[];
   practicalNotes: string[];
   createdAt: string;
+  hasUnverifiedCosts?: boolean;
+  unverifiedCostNote?: string;
 }
 
 export interface TripTemplate {
@@ -83,4 +93,14 @@ export interface TripTemplate {
   imageUrl: string;
   highlights: string[];
   defaults: PlanInput;
+}
+
+export interface StartingHub {
+  id: string;
+  name: string;
+  area: string;
+  coordinates: {
+    lat: number;
+    lng: number;
+  };
 }

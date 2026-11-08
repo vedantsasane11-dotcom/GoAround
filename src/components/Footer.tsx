@@ -17,7 +17,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 <Compass className="w-4 h-4" />
               </div>
               <span className="font-display text-xl font-bold text-white">
-                Tripweave
+                GoAround
               </span>
             </div>
             <p className="text-sm text-neutral-400 max-w-sm leading-relaxed">
@@ -82,7 +82,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-neutral-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-neutral-500 gap-4">
-          <p>© {new Date().getFullYear()} Tripweave. Crafted for the love of Pune & Sahyadri.</p>
+          <p>© {new Date().getFullYear()} GoAround. Crafted for the love of Pune & Sahyadri.</p>
           <div className="flex items-center gap-4">
             <span>Realistic Times</span>
             <span aria-hidden="true">·</span>

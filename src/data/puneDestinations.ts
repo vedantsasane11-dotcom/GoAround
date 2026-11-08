@@ -1,4 +1,4 @@
-import { Destination, TripTemplate } from '../types';
+import { Destination, TripTemplate, StartingHub } from '../types';
 
 import imgHeroSahyadri from '../assets/images/hero_pune_sahyadri_view_1791300583044.jpg';
 import imgSinhagad from '../assets/images/sinhagad_fort_heritage_1791300595394.jpg';
@@ -20,15 +20,15 @@ export {
   imgFCRoad,
 };
 
-export const PUNE_STARTING_HUBS = [
-  { id: 'fc_road', name: 'FC Road / Deccan Gymkhana', area: 'Central Pune' },
-  { id: 'kothrud', name: 'Kothrud (Chandani Chowk)', area: 'West Pune' },
-  { id: 'viman_nagar', name: 'Viman Nagar / Phoenix', area: 'East Pune' },
-  { id: 'hinjewadi', name: 'Hinjewadi Phase 1 / IT Park', area: 'North-West Pune' },
-  { id: 'baner', name: 'Baner / Balewadi High Street', area: 'West Pune' },
-  { id: 'pune_station', name: 'Pune Station / Camp', area: 'Central-East' },
-  { id: 'hadapsar', name: 'Hadapsar / Magarpatta', area: 'South-East' },
-  { id: 'swargate', name: 'Swargate / Sahakarnagar', area: 'South Pune' },
+export const PUNE_STARTING_HUBS: StartingHub[] = [
+  { id: 'fc_road', name: 'FC Road / Deccan Gymkhana', area: 'Central Pune', coordinates: { lat: 18.5196, lng: 73.8415 } },
+  { id: 'kothrud', name: 'Kothrud (Chandani Chowk)', area: 'West Pune', coordinates: { lat: 18.5074, lng: 73.8077 } },
+  { id: 'viman_nagar', name: 'Viman Nagar / Phoenix', area: 'East Pune', coordinates: { lat: 18.5679, lng: 73.9143 } },
+  { id: 'hinjewadi', name: 'Hinjewadi Phase 1 / IT Park', area: 'North-West Pune', coordinates: { lat: 18.5913, lng: 73.7389 } },
+  { id: 'baner', name: 'Baner / Balewadi High Street', area: 'West Pune', coordinates: { lat: 18.5590, lng: 73.7868 } },
+  { id: 'pune_station', name: 'Pune Station / Camp', area: 'Central-East', coordinates: { lat: 18.5284, lng: 73.8744 } },
+  { id: 'hadapsar', name: 'Hadapsar / Magarpatta', area: 'South-East', coordinates: { lat: 18.5089, lng: 73.9260 } },
+  { id: 'swargate', name: 'Swargate / Sahakarnagar', area: 'South Pune', coordinates: { lat: 18.5018, lng: 73.8586 } },
 ];
 
 export const ALL_DESTINATIONS: Destination[] = [

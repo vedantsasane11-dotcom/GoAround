@@ -12,14 +12,36 @@ import {
   Check,
   Compass,
   ArrowRight,
-  ExternalLink,
-  ChevronDown,
   Info,
   Lightbulb,
   Navigation,
+  AlertTriangle,
+  Landmark,
+  Mountain,
+  Trees,
+  ExternalLink,
 } from 'lucide-react';
-import { Itinerary, ItineraryStop } from '../types';
+import { Destination, Itinerary, ItineraryStop } from '../types';
 import { getTransportLabel } from '../services/plannerEngine';
+
+/**
+ * Builds a Google Maps Directions URL for a destination.
+ * Prefers lat/lng coordinates when valid (non-zero, finite).
+ * Falls back to the destination name as a plain-text query.
+ * Origin is intentionally omitted so Google Maps can use the
+ * user's current location or let them choose their own start.
+ */
+function buildGoogleMapsDirectionsUrl(destination: Destination): string {
+  const { lat, lng } = destination.coordinates;
+  const hasValidCoords =
+    isFinite(lat) && isFinite(lng) && (lat !== 0 || lng !== 0);
+
+  const destinationParam = hasValidCoords
+    ? `${lat},${lng}`
+    : encodeURIComponent(destination.name);
+
+  return `https://www.google.com/maps/dir/?api=1&destination=${destinationParam}`;
+}
 
 interface TripResultViewProps {
   itinerary: Itinerary;
@@ -40,7 +62,7 @@ export const TripResultView: React.FC<TripResultViewProps> = ({
   const handleShare = async () => {
     try {
       const shareData = {
-        title: `Tripweave — ${itinerary.title}`,
+        title: `GoAround — ${itinerary.title}`,
         text: `Check out this realistic Pune outing: ${itinerary.title} (${itinerary.totalDurationHours}h · ₹${itinerary.totalEstimatedCostPerPerson}/person)`,
         url: window.location.href,
       };
@@ -63,6 +85,19 @@ export const TripResultView: React.FC<TripResultViewProps> = ({
 
   const handlePrint = () => {
     window.print();
+  };
+
+  const renderCategoryIcon = (category: string) => {
+    switch (category) {
+      case 'heritage':
+        return <Landmark className="w-8 h-8 text-amber-300" />;
+      case 'scenic_view':
+        return <Mountain className="w-8 h-8 text-sky-300" />;
+      case 'nature':
+        return <Trees className="w-8 h-8 text-emerald-300" />;
+      default:
+        return <Compass className="w-8 h-8 text-sky-300" />;
+    }
   };
 
   return (
@@ -120,6 +155,22 @@ export const TripResultView: React.FC<TripResultViewProps> = ({
         </div>
       </div>
 
+      {/* Honest Budget / Unverified Cost Disclaimer Notice */}
+      {itinerary.hasUnverifiedCosts && (
+        <div className="mb-8 p-4.5 rounded-2xl bg-amber-50/90 border border-amber-200 text-amber-900 text-xs flex items-start gap-3.5 shadow-xs">
+          <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+          <div className="space-y-1">
+            <div className="font-bold text-amber-950 text-sm">
+              Good to know: entry fees
+            </div>
+            <p className="leading-relaxed text-amber-900">
+              {itinerary.unverifiedCostNote ||
+                "Some places on this route don't have published entry tickets. We've included fuel, transit, and food estimates, but keep a little cash handy for local tickets or parking."}
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* Itinerary Header Hero */}
       <div className="mb-10">
         <div className="flex items-center gap-2 text-xs font-semibold tracking-wider text-sky-700 uppercase mb-2">
@@ -127,7 +178,7 @@ export const TripResultView: React.FC<TripResultViewProps> = ({
           <span aria-hidden="true">·</span>
           <span>{itinerary.totalDurationHours} Hours Total</span>
           <span aria-hidden="true">·</span>
-          <span>{itinerary.stops.length} Verified Stops</span>
+          <span>{itinerary.stops.length} Curated Stops</span>
         </div>
 
         <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-neutral-900 leading-tight">
@@ -141,17 +192,24 @@ export const TripResultView: React.FC<TripResultViewProps> = ({
         {/* Key Metrics Banner */}
         <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3">
           <div className="bg-white rounded-xl border border-neutral-200/80 p-3.5 shadow-xs">
-            <span className="block text-[11px] font-medium text-neutral-400">Total Est. Cost</span>
+            <span className="block text-[11px] font-medium text-neutral-400">
+              {itinerary.hasUnverifiedCosts ? 'Estimated Transit & Food' : 'Estimated Cost'}
+            </span>
             <div className="flex items-baseline gap-1 mt-0.5">
               <span className="text-xl font-bold text-neutral-900 tabular-nums">
                 ₹{itinerary.totalEstimatedCostPerPerson}
               </span>
               <span className="text-xs text-neutral-500">/ person</span>
             </div>
+            {itinerary.hasUnverifiedCosts && (
+              <span className="text-[10px] text-amber-700 font-medium block mt-0.5">
+                + local gate entry
+              </span>
+            )}
           </div>
 
           <div className="bg-white rounded-xl border border-neutral-200/80 p-3.5 shadow-xs">
-            <span className="block text-[11px] font-medium text-neutral-400">Total Route Span</span>
+            <span className="block text-[11px] font-medium text-neutral-400">Total Distance</span>
             <div className="flex items-baseline gap-1 mt-0.5">
               <span className="text-xl font-bold text-neutral-900 tabular-nums">
                 {itinerary.totalDistanceKm} km
@@ -170,7 +228,7 @@ export const TripResultView: React.FC<TripResultViewProps> = ({
           </div>
 
           <div className="bg-white rounded-xl border border-neutral-200/80 p-3.5 shadow-xs">
-            <span className="block text-[11px] font-medium text-neutral-400">Calibrated Transit</span>
+            <span className="block text-[11px] font-medium text-neutral-400">Travel Mode</span>
             <div className="text-xs font-semibold text-neutral-800 mt-1 truncate">
               {getTransportLabel(itinerary.transportMode).split('(')[0]}
             </div>
@@ -184,10 +242,10 @@ export const TripResultView: React.FC<TripResultViewProps> = ({
           <div>
             <h2 className="text-lg font-bold text-neutral-900 flex items-center gap-2">
               <Navigation className="w-5 h-5 text-sky-600" />
-              <span>Route Overview & Transit Geometry</span>
+              <span>Route Overview</span>
             </h2>
             <p className="text-xs text-neutral-500 mt-0.5">
-              Sequence calibrated to minimize cross-city choke points during peak hours.
+              Stops are sequenced so you spend more time enjoying places and less time stuck in traffic.
             </p>
           </div>
           <div className="text-xs font-semibold text-sky-800 bg-sky-50 px-3 py-1.5 rounded-lg border border-sky-100 self-start sm:self-auto">
@@ -238,10 +296,10 @@ export const TripResultView: React.FC<TripResultViewProps> = ({
                   >
                     0{stop.stopNumber}
                   </div>
-                  <span className="text-xs font-bold text-neutral-900 mt-2 max-w-[120px] text-center truncate">
-                    {stop.destination.name.split('&')[0]}
+                  <span className="text-xs font-bold text-neutral-900 mt-2 max-w-[110px] text-center truncate">
+                    {stop.destination.name}
                   </span>
-                  <span className="text-[11px] font-medium text-sky-700">
+                  <span className="text-[10px] text-neutral-400 tabular-nums">
                     {stop.startTime}
                   </span>
                 </div>
@@ -249,52 +307,56 @@ export const TripResultView: React.FC<TripResultViewProps> = ({
             ))}
           </div>
         </div>
-
-        {/* Selected Route Segment Tip */}
-        <div className="mt-4 p-4 rounded-xl bg-neutral-50 border border-neutral-200/80 text-xs text-neutral-700 flex items-start gap-3">
-          <Info className="w-4 h-4 text-sky-600 shrink-0 mt-0.5" />
-          <div>
-            <span className="font-semibold text-neutral-900">
-              Stop {activeStopIndex + 1} Highlight: {itinerary.stops[activeStopIndex]?.destination.name}
-            </span>
-            <p className="mt-0.5 text-neutral-600">
-              {itinerary.stops[activeStopIndex]?.insiderTip}
-            </p>
-          </div>
-        </div>
       </section>
 
-      {/* Stop-by-Stop Detailed Timeline */}
-      <section className="mb-12 space-y-6">
-        <div className="flex items-center justify-between">
+      {/* Chronological Stop Cards Timeline */}
+      <section className="mb-12">
+        <div className="flex items-center justify-between mb-6">
           <h2 className="text-xl font-bold text-neutral-900">
-            Chronological Outing Timeline
+            Your day at a glance
           </h2>
           <span className="text-xs text-neutral-500">
-            {itinerary.stops.length} stops scheduled
+            {itinerary.stops.length} stops planned
           </span>
         </div>
 
         <div className="space-y-6">
-          {itinerary.stops.map((stop, idx) => (
+          {itinerary.stops.map((stop) => (
             <div
               key={stop.stopNumber}
               className="bg-white rounded-2xl border border-neutral-200/90 overflow-hidden shadow-xs transition-all hover:border-neutral-300"
             >
               <div className="grid grid-cols-1 md:grid-cols-12 gap-0">
-                {/* Stop Real Photograph (Desktop 5 cols, Mobile full) */}
-                <div className="md:col-span-5 relative aspect-[16/10] md:aspect-auto h-52 md:h-full bg-neutral-100 overflow-hidden">
-                  <img
-                    src={stop.destination.imageUrl}
-                    alt={stop.destination.name}
-                    referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover object-center"
-                  />
-                  <div className="absolute top-3 left-3 bg-neutral-900/85 backdrop-blur-md text-white text-xs font-bold px-2.5 py-1 rounded-md">
+                {/* Stop Photograph or Elegant Category Banner (Desktop 5 cols, Mobile full) */}
+                <div className="md:col-span-5 relative aspect-[16/10] md:aspect-auto h-52 md:h-full bg-neutral-900 overflow-hidden flex items-center justify-center">
+                  {stop.destination.imageUrl ? (
+                    <img
+                      src={stop.destination.imageUrl}
+                      alt={stop.destination.name}
+                      referrerPolicy="no-referrer"
+                      className="w-full h-full object-cover object-center"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-950 p-6 flex flex-col justify-between relative">
+                      <div className="flex justify-between items-start">
+                        <div className="p-2.5 rounded-xl bg-white/10 backdrop-blur-md">
+                          {renderCategoryIcon(stop.destination.category)}
+                        </div>
+                        <span className="text-[11px] font-semibold uppercase tracking-wider text-neutral-300 bg-white/10 px-2 py-0.5 rounded-md">
+                          {stop.destination.subcategory || stop.destination.category}
+                        </span>
+                      </div>
+                      <div>
+                        <div className="text-xs text-sky-200 font-medium">{stop.destination.area || 'Pune Region'}</div>
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="absolute top-3 left-3 bg-neutral-900/85 backdrop-blur-md text-white text-xs font-bold px-2.5 py-1 rounded-md z-10">
                     Stop 0{stop.stopNumber}
                   </div>
-                  <div className="absolute bottom-3 left-3 bg-black/60 backdrop-blur-md text-white text-xs font-semibold px-2.5 py-1 rounded-md">
-                    {stop.destination.area}
+                  <div className="absolute bottom-3 left-3 bg-black/60 backdrop-blur-md text-white text-xs font-semibold px-2.5 py-1 rounded-md z-10">
+                    {stop.destination.area || 'Pune Region'}
                   </div>
                 </div>
 
@@ -313,7 +375,9 @@ export const TripResultView: React.FC<TripResultViewProps> = ({
                         </span>
                       </div>
                       <span className="font-semibold text-emerald-800 tabular-nums">
-                        Est. ₹{stop.estimatedCost} / person
+                        {stop.estimatedCost !== null
+                          ? `Est. ₹${stop.estimatedCost} / person`
+                          : 'Entry fee not listed (check at gate)'}
                       </span>
                     </div>
 
@@ -322,14 +386,16 @@ export const TripResultView: React.FC<TripResultViewProps> = ({
                     </h3>
 
                     <p className="mt-2 text-xs sm:text-sm text-neutral-600 leading-relaxed">
-                      {stop.destination.description}
+                      {stop.destination.description ||
+                        stop.destination.tagline ||
+                        `Curated destination located in ${stop.destination.area || 'Pune'}.`}
                     </p>
 
-                    {/* Why this stop was selected */}
+                    {/* Why GoAround Selected This */}
                     <div className="mt-4 p-3 bg-sky-50/70 rounded-xl border border-sky-100 text-xs">
                       <div className="font-semibold text-sky-900 flex items-center gap-1.5 mb-0.5">
                         <Sparkles className="w-3.5 h-3.5 text-sky-600" />
-                        <span>Why Tripweave Selected This:</span>
+                        <span>Why you&apos;ll like this spot:</span>
                       </div>
                       <p className="text-sky-800">{stop.reasonForPick}</p>
                     </div>
@@ -338,9 +404,23 @@ export const TripResultView: React.FC<TripResultViewProps> = ({
                     <div className="mt-2.5 p-3 bg-amber-50/60 rounded-xl border border-amber-100 text-xs">
                       <div className="font-semibold text-amber-900 flex items-center gap-1.5 mb-0.5">
                         <Lightbulb className="w-3.5 h-3.5 text-amber-600" />
-                        <span>Local Pro-Tip:</span>
+                        <span>Helpful tip:</span>
                       </div>
                       <p className="text-amber-800">{stop.insiderTip}</p>
+                    </div>
+
+                    {/* Get Directions link */}
+                    <div className="mt-3">
+                      <a
+                        href={buildGoogleMapsDirectionsUrl(stop.destination)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Get directions to ${stop.destination.name} on Google Maps`}
+                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-sky-700 hover:text-sky-900 hover:underline transition-colors"
+                      >
+                        <ExternalLink className="w-3.5 h-3.5" />
+                        Open in Google Maps ↗
+                      </a>
                     </div>
                   </div>
 
@@ -349,7 +429,7 @@ export const TripResultView: React.FC<TripResultViewProps> = ({
                     <div className="mt-5 pt-4 border-t border-neutral-100 flex items-center justify-between text-xs text-neutral-500">
                       <div className="flex items-center gap-2">
                         <Bike className="w-3.5 h-3.5 text-neutral-400" />
-                        <span>Transit to Next: {stop.travelTimeToNextMinutes} mins</span>
+                        <span>Next stop: ~{stop.travelTimeToNextMinutes} mins</span>
                         <span aria-hidden="true">·</span>
                         <span>{stop.distanceToNextKm} km</span>
                       </div>
@@ -371,7 +451,7 @@ export const TripResultView: React.FC<TripResultViewProps> = ({
         <div className="bg-white rounded-2xl border border-neutral-200/90 p-6 shadow-xs">
           <h3 className="text-base font-bold text-neutral-900 mb-4 flex items-center gap-2">
             <IndianRupee className="w-4 h-4 text-sky-600" />
-            <span>Honest Budget Breakdown</span>
+            <span>What your day could cost</span>
           </h3>
 
           <div className="space-y-3.5">
@@ -380,21 +460,29 @@ export const TripResultView: React.FC<TripResultViewProps> = ({
                 <div className="flex justify-between text-xs font-medium">
                   <span className="text-neutral-700">{item.name}</span>
                   <span className="text-neutral-900 font-bold tabular-nums">
-                    ₹{item.amount} ({item.percent}%)
+                    {item.isUnverified ? (
+                      <span className="text-amber-700 font-semibold">Unverified (pay at gate)</span>
+                    ) : (
+                      `₹${item.amount} (${item.percent}%)`
+                    )}
                   </span>
                 </div>
-                <div className="w-full bg-neutral-100 h-2 rounded-full overflow-hidden">
-                  <div
-                    className="bg-sky-600 h-full rounded-full transition-all"
-                    style={{ width: `${Math.min(100, item.percent)}%` }}
-                  />
-                </div>
+                {!item.isUnverified && (
+                  <div className="w-full bg-neutral-100 h-2 rounded-full overflow-hidden">
+                    <div
+                      className="bg-sky-600 h-full rounded-full transition-all"
+                      style={{ width: `${Math.min(100, item.percent)}%` }}
+                    />
+                  </div>
+                )}
               </div>
             ))}
           </div>
 
           <div className="mt-6 pt-4 border-t border-neutral-100 flex justify-between items-baseline">
-            <span className="text-xs font-semibold text-neutral-600">Total Calculated:</span>
+            <span className="text-xs font-semibold text-neutral-600">
+              {itinerary.hasUnverifiedCosts ? 'Base route estimate (excl. gate):' : 'Total estimated cost:'}
+            </span>
             <span className="text-xl font-bold text-neutral-900 tabular-nums">
               ₹{itinerary.totalEstimatedCostPerPerson}
               <span className="text-xs font-normal text-neutral-500"> / person</span>
@@ -406,7 +494,7 @@ export const TripResultView: React.FC<TripResultViewProps> = ({
         <div className="bg-white rounded-2xl border border-neutral-200/90 p-6 shadow-xs">
           <h3 className="text-base font-bold text-neutral-900 mb-4 flex items-center gap-2">
             <Info className="w-4 h-4 text-sky-600" />
-            <span>Practical Route Intelligence</span>
+            <span>Know before you go</span>
           </h3>
 
           <ul className="space-y-3">
@@ -419,7 +507,7 @@ export const TripResultView: React.FC<TripResultViewProps> = ({
             <li className="flex items-start gap-2.5 text-xs text-neutral-600 leading-relaxed">
               <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
               <span>
-                Fuel/parking fees calibrated for {itinerary.groupSize} travelers. Split fare evenly via UPI QR.
+                Fuel/fare calibrated for {itinerary.groupSize} traveler{itinerary.groupSize > 1 ? 's' : ''}.
               </span>
             </li>
           </ul>

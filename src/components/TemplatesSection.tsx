@@ -21,10 +21,10 @@ export const TemplatesSection: React.FC<TemplatesSectionProps> = ({
               Ready-To-Go Outings
             </div>
             <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-neutral-900 text-balance">
-              Proven routes tested by Pune locals
+              Tried-and-tested plans for your weekend
             </h2>
             <p className="mt-2 text-sm sm:text-base text-neutral-600 max-w-2xl">
-              Calibrated itineraries for your weekend. Zero guessing parking rules, food stalls, or road quality.
+              Ready-made routes with realistic travel times, food stops, and honest budget estimates. Pick one and head out.
             </p>
           </div>
         </div>
@@ -85,7 +85,7 @@ export const TemplatesSection: React.FC<TemplatesSectionProps> = ({
               <div className="p-5 pt-0">
                 <div className="pt-3 border-t border-neutral-100 flex items-center justify-between">
                   <div>
-                    <span className="block text-[11px] text-neutral-400">Est. Total</span>
+                    <span className="block text-[11px] text-neutral-400">Est. cost</span>
                     <span className="font-bold text-base text-neutral-900 tabular-nums">
                       ₹{tmpl.estimatedCost}
                     </span>
@@ -96,7 +96,7 @@ export const TemplatesSection: React.FC<TemplatesSectionProps> = ({
                     onClick={() => onSelectTemplate(tmpl)}
                     className="inline-flex items-center gap-1.5 text-xs font-semibold text-sky-700 hover:text-sky-800 group-hover:translate-x-0.5 transition-all p-2 rounded-lg hover:bg-sky-50 cursor-pointer"
                   >
-                    <span>Load Route</span>
+                    <span>View Plan</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </button>
                 </div>
